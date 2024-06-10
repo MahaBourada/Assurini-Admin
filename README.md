@@ -4,7 +4,7 @@
 <h3>
   <b>Objective:</b> 
 </h3>
-<p>A website that allows you to manage the data of insurance companies and plans as well as viewing the general statistics of the app's data.</p>
+<p>A website for managing insurance companies and offers, and for viewing application data statistics.</p>
 </li>
   
 <li><h4>

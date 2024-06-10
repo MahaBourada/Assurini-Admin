@@ -90,8 +90,11 @@ const EditOffer = ({ companies }) => {
     } catch (err) {
       if (err.response.data.message === "No information was updated") {
         setWarningText(err.response.data.message);
+        setErrorText("");
+        setSuccessText(false);
       } else {
         setErrorText(err.response.data.message);
+        setWarningText("");
         setSuccessText(false);
       }
     }

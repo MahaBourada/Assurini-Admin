@@ -3,13 +3,8 @@ import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
 import LinePlot from "../components/CountLinePlot";
 import { Oval } from "react-loading-icons";
-//import { useLocation } from "react-router-dom";
 
 const StatsPage = ({ offers, companies, loading }) => {
-  //const location = useLocation()
-
-  //console.log(location.state.email)
-
   return (
     <div className="flex">
       <SideBar selected={"Statistics"} />

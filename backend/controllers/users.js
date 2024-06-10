@@ -61,15 +61,15 @@ export const handleLogin = asyncHandler(async (req, res) => {
       .json({ message: "E-mail and password are required" });
   }
 
-  const foundUser = await User.findOne({ email }).exec();
+  const foundUser = await User.findOne({ email: email }).exec();
 
   if (!foundUser) {
-    return res.status(401).json({ message: "Unauthorized" });
+    return res.status(401).json({ message: "Incorrect e-mail" });
   }
 
   const match = await bcrypt.compare(password, foundUser.password);
 
-  if (!match) return res.status(401).json({ message: "Unauthorized" });
+  if (!match) return res.status(401).json({ message: "Incorrect password" });
 
   // create JWTs
   const accessToken = jwt.sign(

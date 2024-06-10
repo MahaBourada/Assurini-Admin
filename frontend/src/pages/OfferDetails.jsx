@@ -134,7 +134,7 @@ const OfferDetails = () => {
               <h2 className="m-1 mx-4 text-2xl font-normal">
                 {offer.description}
               </h2>
-              <h1 className="mt-6">Terms</h1>
+              <h1 className="mt-6">Terms & Conditions</h1>
               <h2 className="m-1 mx-4 text-2xl font-normal">{offer.terms}</h2>
             </div>
           )}
